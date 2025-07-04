@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 id="welcome-message">Hai <span id="name-placeholder">[Nama]</span></h1>
+        <h3>Ini adalah website latihan pertama</h3>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="headquarters">
+        <h2>Our Headquarter</h2>
+        <div class="circles">
+            <div class="circle">Jakarta</div>
+            <div class="circle">Bandung</div>
+            <div class="circle">Surabaya</div>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Message Us</h2>
+        <form id="inquiryForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="date" id="date" placeholder="Date" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="formResult">
+            <h3>Form Submission Result:</h3>
+            <p id="formName"></p>
+            <p id="formDate"></p>
+            <p id="formEmail"></p>
+            <p id="formPhone"></p>
+            <p id="formMessage"></p>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
